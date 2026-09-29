@@ -1,0 +1,132 @@
+/* 全局样式：让页面居中，背景是淡灰色 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* 主容器卡片：白色背景，带点阴影和圆角 */
+.container {
+    background: white;
+    width: 450px;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+header h1 {
+    margin: 0;
+    color: #333;
+    font-size: 24px;
+}
+
+header p {
+    color: #888;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* 输入框和按钮区域 */
+.input-group {
+    display: flex;
+    margin-top: 25px;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    outline: none;
+    background-color: #fafafa;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #6366f1;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+button#addBtn {
+    padding: 10px 20px;
+    background-color: #6366f1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button#addBtn:hover {
+    background-color: #4f46e5;
+}
+
+/* 列表区域样式 */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+}
+
+li {
+    background: #fff;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li span {
+    color: #444;
+    word-break: break-all;
+    margin-right: 10px;
+}
+
+/* 删除按钮 */
+.delete-btn {
+    background: transparent;
+    color: #ef4444;
+    border: 1px solid #fecaca;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.2s;
+}
+
+.delete-btn:hover {
+    background: #ef4444;
+    color: white;
+}
+
+/* 底部统计与清空区域 */
+.footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #9ca3af;
+    border-top: 1px solid #f3f4f6;
+    padding-top: 15px;
+}
+
+.danger-btn {
+    background: none;
+    border: none;
+    color: #9ca3af;
+    cursor: pointer;
+}
+
+.danger-btn:hover {
+    color: #ef4444;
+    text-decoration: underline;
+}

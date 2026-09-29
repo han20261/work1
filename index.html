@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atoms Demo - 灵感收集器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💡 灵感收集器</h1>
+            <p>捕捉你稍纵即逝的想法</p>
+        </header>
+
+        <div class="input-group">
+            <input type="text" id="ideaInput" placeholder="在这里输入你的新想法...">
+            <button id="addBtn">记录灵感</button>
+        </div>
+
+        <ul id="ideaList"></ul>
+
+        <div class="footer">
+            <span id="count">当前共有 0 个灵感</span>
+            <button id="clearAll" class="danger-btn">清空所有</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
